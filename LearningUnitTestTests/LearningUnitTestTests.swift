@@ -39,6 +39,6 @@ final class LearningUnitTestTests: XCTestCase {
         
         expected = simpleMath.beSquare(4)
         
-        XCTAssertEqual(expected, 18)
+        XCTAssertEqual(expected, 16)
     }
 }
