@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  unit-testing:
+    runs-on: macos-latest
+    steps:
+    - name: Check Repo
+      uses: actions/checkout@v3
+    - name: Lint
+      run: swiftlint
+    - name: build for macos
+      run: swift build
+    - name: testing swift for macos
+      run: swift test

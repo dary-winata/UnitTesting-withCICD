@@ -14,6 +14,7 @@
 		6A9120AB2A63AE3300C962C4 /* LearningUnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9120AA2A63AE3300C962C4 /* LearningUnitTestTests.swift */; };
 		6A9120B52A63AE3300C962C4 /* LearningUnitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9120B42A63AE3300C962C4 /* LearningUnitTestUITests.swift */; };
 		6A9120B72A63AE3300C962C4 /* LearningUnitTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9120B62A63AE3300C962C4 /* LearningUnitTestUITestsLaunchTests.swift */; };
+		6A9120C42A63B0FF00C962C4 /* SimpleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9120C32A63B0FF00C962C4 /* SimpleMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6A9120B02A63AE3300C962C4 /* LearningUnitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningUnitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9120B42A63AE3300C962C4 /* LearningUnitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUnitTestUITests.swift; sourceTree = "<group>"; };
 		6A9120B62A63AE3300C962C4 /* LearningUnitTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUnitTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A9120C32A63B0FF00C962C4 /* SimpleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				6A91209B2A63AE3200C962C4 /* ContentView.swift */,
 				6A91209D2A63AE3200C962C4 /* Assets.xcassets */,
 				6A91209F2A63AE3300C962C4 /* Preview Content */,
+				6A9120C32A63B0FF00C962C4 /* SimpleMath.swift */,
 			);
 			path = LearningUnitTest;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9120C42A63B0FF00C962C4 /* SimpleMath.swift in Sources */,
 				6A91209C2A63AE3200C962C4 /* ContentView.swift in Sources */,
 				6A91209A2A63AE3200C962C4 /* LearningUnitTestApp.swift in Sources */,
 			);

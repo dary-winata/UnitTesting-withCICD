@@ -9,28 +9,36 @@ import XCTest
 @testable import LearningUnitTest
 
 final class LearningUnitTestTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var simpleMath : SimpleMath!
+    
+    //start every new test
+    override func setUp() {
+        simpleMath = SimpleMath()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        simpleMath = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testAddTenWorks() {
+        //given - arrange
+        var expected: Int = 0
+        
+        //when - act
+        expected = simpleMath.addTen(10)
+        
+        //then - assert
+        XCTAssert(expected == 20, "This should be 20")
+        XCTAssertTrue(expected == 20)
+        XCTAssertEqual(expected, 20, "this should be 20")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testBeSquareSucceeds() {
+        var expected = 0
+        
+        expected = simpleMath.beSquare(4)
+        
+        XCTAssertEqual(expected, 16)
     }
-
 }
